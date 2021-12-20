@@ -18,7 +18,7 @@ $delays = array();
 // Your image link
 // example:
 //$pathToImage = 'images/img.png';
-$pathToImage = 'images/img.png';
+$pathToImage = 'images/Countdown_DE.png';
 
 $image = imagecreatefrompng($pathToImage);
 

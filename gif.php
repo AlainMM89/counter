@@ -2,13 +2,13 @@
 
 
 //Leave all this stuff as it is
-$time_zone = (!empty($_GET['time_zone'])) ? $_GET['time_zone'] : 'America/New_York';
+$time_zone = (!empty($_GET['time_zone'])) ? $_GET['time_zone'] : 'Europe/Zurich';
 date_default_timezone_set($time_zone);
 include 'GIFEncoder.class.php';
 //$time = $_GET['time'];
 //$future_date = new DateTime(date('r', strtotime($time)));
-//$future_date = new DateTime(date('r', strtotime("2021-12-24 17:45:12")));
-$future_date = new DateTime(date('r', strtotime('+5 day', time())));
+$future_date = new DateTime(date('r', strtotime("2021-12-24 17:45:12")));
+//$future_date = new DateTime(date('r', strtotime('+5 day', time())));
 $time_now = time();
 $now = new DateTime(date('r', $time_now));
 $frames = array();

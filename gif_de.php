@@ -25,10 +25,10 @@ $image = imagecreatefrompng($pathToImage);
 $delay = 100;// milliseconds
 
 $font = array(
-    'size' => 33, // Font size, in pts usually.
+    'size' => 42, // Font size, in pts usually.
     'angle' => 0, // Angle of the text
-    'x-offset' => 28, // The larger the number the further the distance from the left hand side, 0 to align to the left.
-    'y-offset' => 66, // The vertical alignment, trial and error between 20 and 60.
+    'x-offset' => 47, // The larger the number the further the distance from the left hand side, 0 to align to the left.
+    'y-offset' => 95, // The vertical alignment, trial and error between 20 and 60.
     'file' => dirname(__FILE__) . '/' . 'Futura.ttc', // Font path
     'color' => imagecolorallocate($image, 333, 333, 333), // RGB Colour of the text
 );

@@ -62,7 +62,7 @@ for ($i = 0; $i <= 60; $i++) {
             $image, $font['size'], $font['angle'], $font['x-offset'], $font['y-offset'], $font['color'], $font['file'], $textDays
         );
         imagettftext(
-            $image, $font['size'], $font['angle'], $font['x-offset'] +107, $font['y-offset'], $font['color'], $font['file'], $textHours
+            $image, $font['size'], $font['angle'], $font['x-offset'] + 107, $font['y-offset'], $font['color'], $font['file'], $textHours
         );
         imagettftext(
             $image, $font['size'], $font['angle'], $font['x-offset'] + 213, $font['y-offset'], $font['color'], $font['file'], $textMinutes

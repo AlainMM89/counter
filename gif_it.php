@@ -25,9 +25,9 @@ $image = imagecreatefrompng($pathToImage);
 $delay = 100;// milliseconds
 
 $font = array(
-    'size' => 38, // Font size, in pts usually.
+    'size' => 40, // Font size, in pts usually.
     'angle' => 0, // Angle of the text
-    'x-offset' => 80, // The larger the number the further the distance from the left hand side, 0 to align to the left.
+    'x-offset' => 60, // The larger the number the further the distance from the left hand side, 0 to align to the left.
     'y-offset' => 72, // The vertical alignment, trial and error between 20 and 60.
     'file' => dirname(__FILE__) . '/' . 'Futura.ttc', // Font path
     'color' => imagecolorallocate($image, 333, 333, 333), // RGB Colour of the text
@@ -62,13 +62,13 @@ for ($i = 0; $i <= 60; $i++) {
             $image, $font['size'], $font['angle'], $font['x-offset'], $font['y-offset'], $font['color'], $font['file'], $textDays
         );
         imagettftext(
-            $image, $font['size'], $font['angle'], $font['x-offset'] +107, $font['y-offset'], $font['color'], $font['file'], $textHours
+            $image, $font['size'], $font['angle'], $font['x-offset'] +130, $font['y-offset'], $font['color'], $font['file'], $textHours
         );
         imagettftext(
-            $image, $font['size'], $font['angle'], $font['x-offset'] + 213, $font['y-offset'], $font['color'], $font['file'], $textMinutes
+            $image, $font['size'], $font['angle'], $font['x-offset'] + 260, $font['y-offset'], $font['color'], $font['file'], $textMinutes
         );
         imagettftext(
-            $image, $font['size'], $font['angle'], $font['x-offset'] + 318, $font['y-offset'], $font['color'], $font['file'], $textSeconds
+            $image, $font['size'], $font['angle'], $font['x-offset'] + 390, $font['y-offset'], $font['color'], $font['file'], $textSeconds
         );
 
 //        for testing:
